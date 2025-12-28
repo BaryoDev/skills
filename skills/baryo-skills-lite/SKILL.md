@@ -33,6 +33,7 @@ description: Condensed summaries of all 19 BaryoDev skills for token-efficient A
 - Report mistakes: `.baryo/mistakes/YYYY-MM-DD-mistake.md`
 - Propose improvements: `.baryo/skill-proposals/`
 - Create PRs to BaryoDev/skills ONLY after explicit manual user confirmation
+- **Compaction**: Manual trigger (`npm run compact`) to summarize logs into `CONTEXT.md`
 
 ---
 
