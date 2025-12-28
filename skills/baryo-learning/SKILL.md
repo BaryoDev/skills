@@ -544,4 +544,54 @@ Follow the template, be honest about mistakes, and start the learning loop!
 
 **Remember**: Every mistake is a lesson. Every lesson is a skill update. Every skill update helps the entire community.
 
-**This is continuous improvement at scale.**
+---
+534: 
+535: ## Part 10: Compaction Protocol (Context Optimization)
+536: 
+537: When conversation history or logs become too large, use **Compaction** to preserve intelligence while saving tokens.
+538: 
+539: ### The Compact Trigger
+540: Triggered manually by the user via `npm run compact` or "Compact our history."
+541: 
+542: ### Compaction Rules
+543: 
+544: 1.  **Summarize, Don't Delete**: Convert detailed `.baryo/logs/` and `.baryo/mistakes/` into a dense `.baryo/CONTEXT.md`.
+545: 2.  **Preserve the "Why"**: Always keep the rationale behind architectural decisions (e.g., "Why we chose Vertical Slices over Layers").
+546: 3.  **The "Never Again" List**: Consolidate recurring mistakes into a high-priority "Pre-Flight Checklist" in `CONTEXT.md`.
+547: 4.  **Identity preservation**: Ensure the project name, mission, and current sprint goals remain intact.
+548: 5.  **Human-in-the-Middle**: After drafting `CONTEXT.md`, you MUST present the summary to the user for approval before overwriting the file.
+549: 
+550: ### CONTEXT.md Template
+551: 
+552: ```markdown
+553: # Project Context: [Project Name]
+554: 
+555: ## 🎯 Core Mission
+556: [Mission statement]
+557: 
+558: ## 🏗️ Architectural Decisions (The "Whys")
+559: - **[Decision 1]**: [Rationale]
+560: - **[Decision 2]**: [Rationale]
+561: 
+562: ## 🚨 High-Priority Lessons (Never Again)
+563: - [Mistake 1] -> [Prevention Rule]
+564: - [Mistake 2] -> [Prevention Rule]
+565: 
+566: ## 🔄 Current Technical Debt & TODOs
+567: - [Critical Debt 1]
+568: - [Next Major Pivot]
+569: 
+570: ## 📚 External History
+571: Detailed logs can be found in `.baryo/logs/` and `.baryo/mistakes/`.
+572: ```
+573: 
+574: ### Compaction Workflow
+575: 1. User runs `npm run compact`.
+576: 2. AI reads all logs and mistakes.
+577: 3. AI generates a draft of `CONTEXT.md`.
+578: 4. AI says: "I've drafted a compacted context of our project's intelligence. Please review it in `.baryo/CONTEXT.md.tmp`. Should I finalize it?"
+579: 5. With approval, AI updates `.baryo/CONTEXT.md`.
+580: 
+581: ---
+582: 
+583: **Remember**: Compaction is intelligence compression. Keep the signal, lose the noise.
