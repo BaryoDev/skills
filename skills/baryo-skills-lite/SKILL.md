@@ -26,13 +26,13 @@ description: Condensed summaries of all 19 BaryoDev skills for token-efficient A
 - **Testing**: Never skip edge cases (null, empty, boundary, concurrency)
 - **Anti-hallucination**: Never invent APIs, always ask for clarification
 - **Deletion safety**: Scan usages, list impact, request permission before removing code
-- **Documentation**: Create work logs, mistake reports, propose skill updates
+- **Documentation**: Create logs, report mistakes, ONLY propose skill updates (no auto-PR)
 
 ### baryo-learning
 - Log every task: `.baryo/logs/YYYY-MM-DD-task.md`
 - Report mistakes: `.baryo/mistakes/YYYY-MM-DD-mistake.md`
 - Propose improvements: `.baryo/skill-proposals/`
-- With approval, create PRs to BaryoDev/skills
+- Create PRs to BaryoDev/skills ONLY after explicit manual user confirmation
 
 ---
 
